@@ -1,0 +1,47 @@
+c++ 内存模型
+代码区: 二进制的指令(代表函数)
+全局区: 全局变量，静态变量，常量：特点，数据在程序结束后由操作系统来释放
+堆:new 来开辟内存， delete 释放
+栈: 函数参数，局部变量： 特点，自动分配与释放
+
+指针与引用一样的作用哦   ( * 与 & ) , 引用更加方便,  引用传递与地址传递
+引用的本质： 起别名, 那修改别名肯定会修改原名的值, 指针常量，final Person p;
+
+
+析构(回收作用，在堆上创建的变量)
+
+深copy   浅copy
+
+ 浅copy: 注意在指针的copy，也就是只是copy了一个指针，指向的内存地址是一致的
+注意:  堆上的对象只能delete一次，否则报错, c++的异常如何捕捉
+
+
+this 表示的是指针，调用这个成员的对象指针
+*this : 所以表示的是对象
+
+NULL 空指针
+
+new 返回的是指针
+
+friend  private的东西只能自己访问，但是我可以加白名单， friend，
+白名单 ( 全局函数，friend class className, friend className::method)
+
+.h 头文件， class 声明, 方法的声明
+
+.cpp 实现 (当然罗，class 声明也可以这里，class中method也可以在类外实现，其实感觉不好)
+
+运算符重载:  operator+    operator-    operator*   ....
+
+最终的目的  Person p3 = p1 + p2;  别报错(成员函数与全局函数解决)
+
+operator 是固定的
+
+ctrl+k  ctrl+c  注释选定
+ctrl+k ctrl+u  
+
+
+
+
+
+
+
